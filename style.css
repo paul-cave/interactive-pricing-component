@@ -100,10 +100,11 @@ h2 {
 .pricing-container {
   width: 32.5rem;
   height: 47.5rem;
-  margin: 2.5rem 2.5rem;
+  margin: 2.5rem;
+  /* padding: 2.5rem; */
   border-radius: 0.6rem;
   background-color: var(--clr-white);
-  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2rem 3rem rgba(125, 125, 125, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,6 +155,7 @@ h2 {
   justify-content: center;
   z-index: 2;
   box-shadow: 0 2rem 2rem var(--clr-soft-cyan);
+  cursor: pointer;
 }
 
 .pageviews {
@@ -194,6 +196,7 @@ h2 {
   background-color: var(--clr-light-grey-blue-toggle);
   border-radius: 1.1rem;
   margin: 0 1.1rem;
+  cursor: pointer;
 }
 
 .billing-toggle-circle {
@@ -253,4 +256,79 @@ h2 {
   padding: 1.3rem 4.8rem;
   margin-top: auto;
   margin-bottom: 1.1rem;
+  cursor: pointer;
+}
+.btn-start:hover {
+  color: var(--clr-white);
+}
+
+footer {
+  margin-top: 10rem;
+}
+
+/* 40 * 16px = 640px */
+@media screen and (min-width: 40em) {
+  .pricing-container {
+    width: 54rem;
+    height: 39.6rem;
+  }
+  .pricing-grid {
+    padding: 4.2rem 4.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "views price" "slider slider";
+  }
+  .pageviews {
+    grid-area: views;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
+  .price {
+    grid-area: price;
+    margin-top: 0;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+  }
+  .price-number {
+    font-size: 3.8rem;
+  }
+  .slider {
+    grid-area: slider;
+    margin: 2.3rem 0.3rem 0 0.3rem;
+  }
+  .billing-container {
+    margin-left: auto;
+    margin-right: 6.5rem;
+  }
+  .billing-toggle {
+    margin: 0 1.4rem;
+  }
+  .discount-hidden {
+    display: unset;
+    margin-left: 0.2rem;
+  }
+  .features-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: unset;
+    padding: 0 4.5rem;
+  }
+  .btn-start {
+    margin: unset;
+  }
+}
+
+/* background image fix for large screens */
+@media screen and (min-width: 90em) {
+  body::before {
+    background: url(./images/bg-pattern-large.svg) no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 44.9rem;
+    top: 10%;
+    z-index: -2;
+  }
 }

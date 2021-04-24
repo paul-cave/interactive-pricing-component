@@ -5,8 +5,8 @@
 *.sketch
 *.fig
 design
-style-guide
-README-template
+.style-guide
+.README-template
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
