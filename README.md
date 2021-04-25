@@ -13,8 +13,6 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -30,16 +28,10 @@ Users should be able to:
 ![](./screenshot-desktop.png)
 ![](./screenshot-mobile.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Interactive Pricing Component](https://interactive-pricing-component-steel.vercel.app/)
 
 ## My process
 
