@@ -147,7 +147,7 @@ h2 {
   width: 4rem;
   border-radius: 50%;
   background-color: var(--clr-strong-cyan);
-  position: absolute;
+  position: relative;
   left: 50%;
   margin-left: -2rem;
   display: flex;
@@ -156,6 +156,13 @@ h2 {
   z-index: 2;
   box-shadow: 0 2rem 2rem var(--clr-soft-cyan);
   cursor: pointer;
+}
+.slider-button:hover {
+  background-color: var(--clr-soft-cyan);
+}
+.slider-button:active {
+  background-color: var(--clr-strong-cyan);
+  cursor: move;
 }
 
 .pageviews {
@@ -197,6 +204,10 @@ h2 {
   border-radius: 1.1rem;
   margin: 0 1.1rem;
   cursor: pointer;
+}
+
+.billing-toggle:hover {
+  background-color: var(--clr-soft-cyan);
 }
 
 .billing-toggle-circle {
